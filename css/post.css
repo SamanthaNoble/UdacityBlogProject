@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(253, 170, 198);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blueviolet;
+  border: 2px solid aqua;
+  padding: 0 1em;
+}
+.title {
+  height: 2in;
+}
+.butterfly {
+  height: 2in;
+  width: 2in;
+  text-align: right;
+}
+
+.container {
+  display: grid;
+  background-color: rgba(255, 192, 203, 0.76);
+  grid-template-areas:
+    "pic pic"
+    "body body"
+    "foot foot";
+  border: 2px solid aqua;
+}
+
+.path {
+  grid-area: pic;
+  box-shadow: 3px 3px 3px black;
+  margin: 10px;
+  width: max-content;
+}
+
+.post {
+  grid-area: body;
+  border: 3px solid blueviolet;
+  padding: 10px;
+  margin: 10px;
+}
+
+.footer {
+  grid-area: foot;
+  border: 3px solid blueviolet;
+  padding: 10px;
+  margin: 10px;
+}

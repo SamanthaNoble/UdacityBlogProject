@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(253, 170, 198);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blueviolet;
+  border: 2px solid aqua;
+  padding: 0 1em;
+}
+.title {
+  height: 2in;
+}
+.butterfly {
+  height: 2in;
+  width: 2in;
+  text-align: right;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgba(255, 192, 203, 0.76);
+  border: 2px solid aqua;
+  grid-template-areas:
+    "bio bio"
+    "foot foot";
+}
+.bio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  grid-area: bio;
+}
+
+.avatar {
+  height: 2in;
+  width: 2in;
+  border: 2px blueviolet;
+  box-shadow: 3px 3px 3px;
+  grid-area: bio;
+}
+
+.aboutme {
+  padding: 1em;
+  border: 3px solid blueviolet;
+  padding: 10px;
+  margin: 10px;
+}
+
+.footer {
+  grid-area: foot;
+  text-align: left;
+  border: 3px solid blueviolet;
+  padding: 10px;
+  margin: 10px;
+}
