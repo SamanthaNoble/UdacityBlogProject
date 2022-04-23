@@ -1,6 +1,7 @@
 body {
   background-color: rgb(253, 170, 198);
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -9,14 +10,16 @@ header {
   border: 2px solid aqua;
   padding: 0 1em;
 }
+
 .title {
   height: 2in;
 }
+
 .butterfly {
-  height: ;
   width: 3in;
   text-align: right;
 }
+
 .container {
   display: grid;
   grid-template-columns: 300px 1fr;
